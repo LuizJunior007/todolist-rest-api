@@ -13,7 +13,7 @@
             $content = (string) $response->getBody();
 
             $response = new Response();
-            $response->getBody()->write('Autenticado' . $content);
+            $response->getBody()->write('Minha middleware' . $content);
 
             return $response;
         }
